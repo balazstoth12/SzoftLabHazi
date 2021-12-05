@@ -34,8 +34,8 @@ namespace KoktelKeszitoApp
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "KoktelKeszitoApp", Version = "v1" });
             });
 
-            services.AddDbContext<CocktailContext>(options =>
-            options.UseSqlServer());
+            services.AddDbContext<CocktailContextDb>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
