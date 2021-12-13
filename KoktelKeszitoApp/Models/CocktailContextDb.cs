@@ -19,7 +19,7 @@ namespace KoktelKeszitoApp.Models
         public DbSet<User> Users { get; set; }
         public DbSet<UserCocktail> UserCocktails { get; set; }
         public DbSet<UserFavouriteUser> UserFavouriteUsers { get; set; }
-        public DbSet<KoktelKeszitoApp.Models.FavouriteUser> FavouriteUser { get; set; }
+        public DbSet<FavouriteUser> FavouriteUser { get; set; }
 
     }
 }
