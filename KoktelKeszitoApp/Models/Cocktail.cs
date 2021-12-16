@@ -12,22 +12,18 @@ namespace KoktelKeszitoApp.Models
         [Key]
         public int CocktailId { get; set; }
 
-        [Required]
         [Column (TypeName ="nvarchar(50)")]
         public string CocktailName { get; set; }
 
-        [Required]
         [Column(TypeName = "nvarchar(50)")]
         public User  MadeBy { get; set; }
 
-        [Required]
         [Column(TypeName = "nvarchar(50)")]
         public string MadeDate { get; set; }
 
         [Column(TypeName = "nvarchar(500)")]
         public string Description { get; set; }
-        [Required]
-
+       
         [InverseProperty(nameof(UserCocktail.Cocktail))] // A navigáció másik oldalát jelezzük vele
         public ICollection<UserCocktail> UserCocktails { get; set; }
 

@@ -103,5 +103,30 @@ namespace KoktelKeszitoApp.Controllers
         {
             return _context.Ingredients.Any(e => e.Id == id);
         }
+        //[HttpGet("Search")]
+        //public async Task<ActionResult<IEnumerable<Cocktail>>> Search(string ingredients) 
+        //{
+        //    List<Cocktail> cocktailList = new List<Cocktail>();
+        //    foreach (var cocktail in _context.Cocktails)
+        //    {
+        //        foreach (var ingredint in cocktail.CocktailIngredients)
+        //        {
+        //            if (ingredint.Ingredient.Name == ingredients)
+        //            {
+        //                cocktailList.Add(cocktail);
+        //            }
+        //            else 
+        //            {
+        //                continue;
+        //            }
+
+        //        }
+        //    }
+        //    return cocktailList;
+
+
+        //}
+
     }
 }
+

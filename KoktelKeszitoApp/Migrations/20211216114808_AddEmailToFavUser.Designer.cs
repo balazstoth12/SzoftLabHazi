@@ -4,14 +4,16 @@ using KoktelKeszitoApp.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace KoktelKeszitoApp.Migrations
 {
     [DbContext(typeof(CocktailContextDb))]
-    partial class CocktailContextDbModelSnapshot : ModelSnapshot
+    [Migration("20211216114808_AddEmailToFavUser")]
+    partial class AddEmailToFavUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
